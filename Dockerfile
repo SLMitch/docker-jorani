@@ -4,7 +4,7 @@ RUN apt-get update && apt-get install -y wget bsdtar \
 	  && rm -rf /var/cache/apt
 
 # Install opcache 
-RUN docker-php-ext-install opcache
+RUN docker-php-ext-install opcache pdo_mysql
 
 ENV VERSION_JORANI 0.6.5
 
